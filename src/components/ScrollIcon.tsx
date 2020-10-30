@@ -1,6 +1,6 @@
-import React from 'react';
-import styled, { keyframes } from 'styled-components';
-import { lighten } from 'polished';
+import React from "react";
+import styled, { keyframes } from "styled-components";
+import { lighten } from "polished";
 
 type Props = {
   onClick: () => void;

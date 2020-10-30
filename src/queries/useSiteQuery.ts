@@ -1,5 +1,5 @@
-import { graphql, useStaticQuery } from 'gatsby';
-import { Landing, SocialLink } from '../types';
+import { graphql, useStaticQuery } from "gatsby";
+import { Landing, SocialLink } from "../types";
 
 type QueryResponse = {
   contentfulAbout: {

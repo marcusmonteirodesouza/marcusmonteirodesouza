@@ -1,9 +1,10 @@
-const { renameSync } = require('fs');
+/* eslint-disable @typescript-eslint/no-var-requires */
+const { renameSync } = require("fs");
 
 module.exports = (on, config) => {
-  on('after:screenshot', ({ path }) => {
+  on("after:screenshot", ({ path }) => {
     console.log(path);
-    renameSync(path, path.replace(/ \(\d*\)/i, ''));
+    renameSync(path, path.replace(/ \(\d*\)/i, ""));
   });
 
   return config;

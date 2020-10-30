@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-mate",
-  "version": "2.5.3",
-  "description": "Gatsby v2 starter to create a top notch portfolio!",
+  "name": "marcusmonteirodesouza",
+  "version": "1.0.0",
+  "description": "Marcus Vinicius Monteiro de Souza's Personal Website",
   "main": "index.js",
   "scripts": {
     "get-about": "ts-node --files src/scripts/get-about",
@@ -10,9 +10,10 @@
     "build": "gatsby build",
     "prestart": "yarn get-about",
     "start": "gatsby develop",
-    "clean": "rm -rf node_modules && gatsby clean",
+    "clean": "gatsby clean && rm -rf node_modules",
     "serve": "yarn build && gatsby serve -p 9000",
-    "lint": "eslint ./src",
+    "format": "prettier --write .",
+    "lint": "eslint --fix --ext .js,.ts,.tsx .",
     "setup": "node ./bin/setup.js",
     "test": "percy exec -t 350 -h cdn-images-1.medium.com -- cypress run",
     "test:open": "percy exec -t 350 -h cdn-images-1.medium.com -- cypress open",
@@ -22,21 +23,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EmaSuriano/gatsby-starter-mate.git"
+    "url": "git+https://github.com/marcusmonteirodesouza/marcusmonteirodesouza.git"
   },
   "keywords": [
     "gatsby",
-    "starter",
     "contentful",
     "PWA",
     "portfolio"
   ],
-  "author": "Ema Suriano",
+  "author": "Marcus Vinicius Monteiro de Souza",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/EmaSuriano/gatsby-starter-mate/issues"
+    "url": "https://github.com/marcusmonteirodesouza/marcusmonteirodesouza/issues"
   },
-  "homepage": "https://github.com/EmaSuriano/gatsby-starter-mate#readme",
+  "homepage": "https://github.com/marcusmonteirodesouza/marcusmonteirodesouza#readme",
   "dependencies": {
     "@babel/preset-env": "^7.12.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
@@ -80,7 +80,7 @@
     "chalk": "^4.1.0",
     "contentful-import": "^7.9.14",
     "cypress": "^4.12.1",
-    "cypress-axe": "^0.8.1",
+    "cypress-axe": "^0.9.1",
     "dotenv": "^8.2.0",
     "eslint": "^7.12.0",
     "eslint-config-prettier": "^6.14.0",

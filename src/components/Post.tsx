@@ -1,11 +1,11 @@
-import React, { ReactNode } from 'react';
-import { Box, Flex, Heading, Text } from 'rebass/styled-components';
-import styled from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { MediumAuthor, MediumPost as MediumPostType } from '../types';
-import { MEDIUM_URL } from '../utils/constants';
-import { Card } from './Card';
-import ImageLabel from './ImageLabel';
+import React, { ReactNode } from "react";
+import { Box, Flex, Heading, Text } from "rebass/styled-components";
+import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { MediumAuthor, MediumPost as MediumPostType } from "../types";
+import { MEDIUM_URL } from "../utils/constants";
+import { Card } from "./Card";
+import ImageLabel from "./ImageLabel";
 
 type PostProps = MediumPostType;
 
@@ -37,7 +37,7 @@ export const MorePosts = ({ author, number }: MorePostsProps) => (
     <Flex
       flexDirection="column"
       justifyContent="space-between"
-      style={{ height: '100%' }}
+      style={{ height: "100%" }}
     >
       <Box>
         <EllipsisHeading fontSize={5} my={2}>
@@ -71,7 +71,7 @@ const PostContainer = ({ url, title, children }: PostContainerProps) => (
     href={url}
     target="__blank"
     title={title}
-    style={{ textDecoration: 'none' }}
+    style={{ textDecoration: "none" }}
   >
     <Card p={0} pb={4}>
       {children}

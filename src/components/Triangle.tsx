@@ -1,11 +1,11 @@
-import { Colors } from '@rebass/preset';
-import styled from 'styled-components';
+import { Colors } from "@rebass/preset";
+import styled from "styled-components";
 
 type ResponsiveProp<T> = T[];
 
 type Props = {
   color: keyof Colors;
-  position?: 'top-left' | 'top-right' | 'bottom-left' | 'bottom-right';
+  position?: "top-left" | "top-right" | "bottom-left" | "bottom-right";
   width: ResponsiveProp<string>;
   height: ResponsiveProp<string>;
 };
@@ -16,8 +16,8 @@ const Triangle = styled.div<Props>`
   height: 0;
   z-index: -2;
 
-  ${({ theme, color, height, width, position = 'top-left' }) => {
-    const [y, x] = position.split('-');
+  ${({ theme, color, height, width, position = "top-left" }) => {
+    const [y, x] = position.split("-");
 
     return `
       border-${y}: ${height[0]} solid ${theme.colors[color]};
@@ -30,8 +30,8 @@ const Triangle = styled.div<Props>`
   }}
 
   @media only screen and (min-width: 768px) {
-    ${({ height, width, position = 'top-left' }) => {
-      const [y, x] = position.split('-');
+    ${({ height, width, position = "top-left" }) => {
+      const [y, x] = position.split("-");
 
       return `
         border-${y}-width: ${height[1]};
@@ -41,6 +41,6 @@ const Triangle = styled.div<Props>`
   }
 `;
 
-const invertX = (x: string) => (x === 'right' ? 'left' : 'right');
+const invertX = (x: string) => (x === "right" ? "left" : "right");
 
 export default Triangle;

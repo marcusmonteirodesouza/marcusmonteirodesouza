@@ -1,11 +1,11 @@
-import React from 'react';
-import SocialLink from '../components/SocialLink';
-import ImageLabel from './ImageLabel';
-import Hide from '../components/Hide';
-import { Box, Flex, Image, Text } from 'rebass/styled-components';
-import styled from 'styled-components';
-import { Project as ProjectType } from '../types';
-import { Card } from './Card';
+import React from "react";
+import SocialLink from "../components/SocialLink";
+import ImageLabel from "./ImageLabel";
+import Hide from "../components/Hide";
+import { Box, Flex, Image, Text } from "rebass/styled-components";
+import styled from "styled-components";
+import { Project as ProjectType } from "../types";
+import { Card } from "./Card";
 
 type Props = ProjectType;
 
@@ -26,7 +26,7 @@ const Project = ({
             {name}
           </Title>
         </span>
-        <Text width={[1]} style={{ overflow: 'auto' }} color="text">
+        <Text width={[1]} style={{ overflow: "auto" }} color="text">
           {description}
         </Text>
       </TextContainer>
@@ -37,7 +37,7 @@ const Project = ({
           <Flex
             m={1}
             style={{
-              float: 'right',
+              float: "right",
             }}
           >
             <Box mx={1} fontSize={4}>
@@ -59,9 +59,9 @@ const Project = ({
   </Card>
 );
 
-const CARD_HEIGHT = '200px';
+const CARD_HEIGHT = "200px";
 
-const MEDIA_QUERY_SMALL = '@media (max-width: 400px)';
+const MEDIA_QUERY_SMALL = "@media (max-width: 400px)";
 
 const Title = styled(Text)`
   font-size: 14px;

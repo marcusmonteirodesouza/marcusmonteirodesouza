@@ -1,40 +1,40 @@
-describe('Photographer', () => {
+describe("Photographer", () => {
   before(() => {
-    cy.visit('/');
+    cy.visit("/");
     cy.wait(3000); // fix to load fonts ...
   });
 
   beforeEach(() => {
-    cy.viewport('macbook-15');
+    cy.viewport("macbook-15");
   });
 
-  it('Landing Section', () => {
-    cy.visit('/');
-    cy.get('#home').screenshot('Landing');
+  it("Landing Section", () => {
+    cy.visit("/");
+    cy.get("#home").screenshot("Landing");
   });
 
-  it('About Section', () => {
-    cy.visit('/');
-    cy.get('#about').scrollIntoView({ duration: 500 }).screenshot('About');
+  it("About Section", () => {
+    cy.visit("/");
+    cy.get("#about").scrollIntoView({ duration: 500 }).screenshot("About");
   });
 
-  it('Projects Section', () => {
-    cy.visit('/');
+  it("Projects Section", () => {
+    cy.visit("/");
 
-    cy.get('#projects')
+    cy.get("#projects")
       .scrollIntoView({ duration: 500 })
-      .screenshot('Projects');
+      .screenshot("Projects");
   });
 
-  it('Writing Section', () => {
-    cy.visit('/');
+  it("Writing Section", () => {
+    cy.visit("/");
 
-    cy.get('#writing').scrollIntoView({ duration: 500 }).screenshot('Writing');
+    cy.get("#writing").scrollIntoView({ duration: 500 }).screenshot("Writing");
   });
 
-  it('404 Page', () => {
-    cy.visit('/404');
+  it("404 Page", () => {
+    cy.visit("/404");
 
-    cy.get('#404').screenshot('404');
+    cy.get("#404").screenshot("404");
   });
 });

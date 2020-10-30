@@ -1,25 +1,20 @@
 import React from "react";
 import { Fade } from "react-awesome-reveal";
 import Section from "../components/Section";
-import { CardContainer } from "../components/Card";
 import Triangle from "../components/Triangle";
-import Project from "../components/Project";
-import { useProjectsQuery } from "../queries/useProjectsQuery";
 
-const Projects = () => {
-  const projects = useProjectsQuery();
-
+const Contributions = () => {
   return (
-    <Section.Container id="projects" Background={Background}>
-      <Section.Header name="Projects" icon="💻" label="notebook" />
+    <Section.Container id="contributions" Background={Background}>
+      <Section.Header name="Contributions" icon="🔨" label="notebook" />
 
-      <CardContainer minWidth="350px">
-        <Fade direction="down" cascade damping={0.5} triggerOnce>
-          {projects.map((p, i) => (
-            <Project {...p} key={i} />
-          ))}
-        </Fade>
-      </CardContainer>
+      <Fade direction="right" triggerOnce style={{ height: "100vh" }}>
+        <iframe
+          src="https://profile-summary-for-github.com/user/marcusmonteirodesouza"
+          height="100%"
+          width="100%"
+        />
+      </Fade>
     </Section.Container>
   );
 };
@@ -27,7 +22,7 @@ const Projects = () => {
 const Background = () => (
   <>
     <Triangle
-      color="secondary"
+      color="muted"
       height={["80vh", "80vh"]}
       width={["100vw", "100vw"]}
       position="top-right"
@@ -48,7 +43,7 @@ const Background = () => (
     />
 
     <Triangle
-      color="muted"
+      color="secondary"
       height={["25vh", "20vh"]}
       width={["100vw", "100vw"]}
       position="bottom-right"
@@ -56,4 +51,4 @@ const Background = () => (
   </>
 );
 
-export default Projects;
+export default Contributions;

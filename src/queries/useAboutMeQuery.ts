@@ -1,5 +1,5 @@
-import { graphql, useStaticQuery } from 'gatsby';
-import { AboutMe } from '../types';
+import { graphql, useStaticQuery } from "gatsby";
+import { AboutMe } from "../types";
 
 export type QueryResponse = {
   contentfulAbout: {

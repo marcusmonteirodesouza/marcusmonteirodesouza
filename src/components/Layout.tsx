@@ -1,11 +1,11 @@
-import React, { ReactNode } from 'react';
-import { createGlobalStyle, ThemeProvider } from 'styled-components';
-import PropTypes from 'prop-types';
-import { ScrollingProvider } from 'react-scroll-section';
-import Helmet from './Helmet';
-import theme from '../theme';
-import { loadIcons } from '../utils/icon-loader';
-import 'tippy.js/dist/tippy.css'; // eslint-disable-line
+import React, { ReactNode } from "react";
+import { createGlobalStyle, ThemeProvider } from "styled-components";
+import PropTypes from "prop-types";
+import { ScrollingProvider } from "react-scroll-section";
+import Helmet from "./Helmet";
+import theme from "../theme";
+import { loadIcons } from "../utils/icon-loader";
+import "tippy.js/dist/tippy.css"; // eslint-disable-line
 
 loadIcons();
 

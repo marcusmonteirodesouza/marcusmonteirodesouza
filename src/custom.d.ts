@@ -1,4 +1,4 @@
-declare module '@rebass/preset' {
+declare module "@rebass/preset" {
   export interface Theme {
     colors: Colors;
     fonts: Fonts;
@@ -69,7 +69,7 @@ declare module '@rebass/preset' {
   }
 }
 
-declare module '*.svg' {
+declare module "*.svg" {
   const content: any;
   export default content;
 }

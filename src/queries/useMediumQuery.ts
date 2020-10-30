@@ -1,6 +1,6 @@
-import { graphql, useStaticQuery } from 'gatsby';
-import { MediumAuthor, MediumPost } from '../types';
-import { MEDIUM_CDN, MEDIUM_URL } from '../utils/constants';
+import { graphql, useStaticQuery } from "gatsby";
+import { MediumAuthor, MediumPost } from "../types";
+import { MEDIUM_CDN, MEDIUM_URL } from "../utils/constants";
 
 export type QueryResponse = {
   site: {

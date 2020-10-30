@@ -1,11 +1,11 @@
-import React from 'react';
-import { Link } from 'rebass/styled-components';
-import Tippy from '@tippy.js/react';
-import styled from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { lighten } from 'polished';
-import { SocialLink as SocialLinkType } from '../types';
-import { getIconDefinition } from '../utils/icon-loader';
+import React from "react";
+import { Link } from "rebass/styled-components";
+import Tippy from "@tippy.js/react";
+import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { lighten } from "polished";
+import { SocialLink as SocialLinkType } from "../types";
+import { getIconDefinition } from "../utils/icon-loader";
 
 type Props = SocialLinkType & {
   invert?: boolean;

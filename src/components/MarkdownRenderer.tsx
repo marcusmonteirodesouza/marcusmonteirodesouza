@@ -1,7 +1,7 @@
-import React, { ReactNode } from 'react';
-import { useScrollSection } from 'react-scroll-section';
-import { Text } from 'rebass';
-import styled from 'styled-components';
+import React, { ReactNode } from "react";
+import { useScrollSection } from "react-scroll-section";
+import { Text } from "rebass";
+import styled from "styled-components";
 
 const StyledLink = styled.a`
   display: inline-block;
@@ -17,7 +17,7 @@ const StyledLink = styled.a`
     bottom: 0px;
     left: 50%;
     transform: translateX(-50%);
-    content: '';
+    content: "";
     width: 100%;
     height: 3px;
     background-color: ${({ theme }) => theme.colors.highlight};
@@ -63,7 +63,7 @@ type LinkProps = {
 };
 
 const MarkdownLink = ({ href, children }: LinkProps) => {
-  const isInnerLink = href.startsWith('#');
+  const isInnerLink = href.startsWith("#");
   if (isInnerLink)
     return (
       <InnerLink href={href.substring(1, href.length)}>{children}</InnerLink>

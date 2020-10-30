@@ -1,10 +1,10 @@
-import React, { ReactNode } from 'react';
-import styled from 'styled-components';
-import { Section } from 'react-scroll-section';
-import { Heading } from 'rebass/styled-components';
-import PropTypes from 'prop-types';
-import { Slide } from 'react-awesome-reveal';
-import Link from './Link';
+import React, { ReactNode } from "react";
+import styled from "styled-components";
+import { Section } from "react-scroll-section";
+import { Heading } from "rebass/styled-components";
+import PropTypes from "prop-types";
+import { Slide } from "react-awesome-reveal";
+import Link from "./Link";
 
 type ContainerProps = {
   id: string;
@@ -17,7 +17,7 @@ const Container = ({
   children,
   Background = DefaultBackground,
 }: ContainerProps) => (
-  <Section id={id} style={{ position: 'relative' }}>
+  <Section id={id} style={{ position: "relative" }}>
     <Background />
     <SectionContainer>{children}</SectionContainer>
   </Section>
@@ -41,7 +41,7 @@ const Header = ({ name, icon, label }: HeaderProps) => (
       <Link selected>
         {name}
         {icon && (
-          <span role="img" aria-label={label} style={{ marginLeft: '10px' }}>
+          <span role="img" aria-label={label} style={{ marginLeft: "10px" }}>
             {icon}
           </span>
         )}

@@ -1,5 +1,5 @@
-import { graphql, useStaticQuery } from 'gatsby';
-import { Favicon } from '../types';
+import { graphql, useStaticQuery } from "gatsby";
+import { Favicon } from "../types";
 
 type QueryResponse = {
   contentfulAbout: {
