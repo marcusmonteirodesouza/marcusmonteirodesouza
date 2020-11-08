@@ -11,6 +11,8 @@ import {
   prefix as brandPrefix,
   faInstagram,
   faStackExchange,
+  faHackerrank,
+  faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faGlobe,
@@ -28,7 +30,9 @@ export const loadIcons = () =>
     faEnvelope,
     faCoffee,
     faInstagram,
-    faStackExchange
+    faStackExchange,
+    faHackerrank,
+    faLinkedin
   );
 
 export const getIconDefinition = (
